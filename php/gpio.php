@@ -3,5 +3,5 @@
 	$mode = $_REQUEST["mode"];
 	$value = $_REQUEST["value"];
 
-	echo "$portn > /sys/class/gpio/export";
+	system("echo $portn > /sys/class/gpio/export", $retval);
 ?>
