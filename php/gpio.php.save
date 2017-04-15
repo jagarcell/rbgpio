@@ -1,0 +1,7 @@
+<?php
+	$portn = $_REQUEST["portn"];
+	$mode = $_REQUEST["mode"];
+	$value = $_REQUEST["value"];
+	$retval = "";
+	system('echo 17 > /sys/class/gpio/export', $retval)	system('echo out > /sys/class/gpio/gpio$portn/direction', $retval);
+?>
