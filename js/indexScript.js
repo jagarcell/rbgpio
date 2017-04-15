@@ -16,6 +16,8 @@ function turnOn()
 
 		}
 	);
+	document.getElementById('start').style.color = 'blue';
+	document.getElementById('stop').style.color = 'black';
 }
 
 function turnOff()
@@ -29,4 +31,6 @@ function turnOff()
 		function(data, status){
 		}
 	);
+	document.getElementById('start').style.color = 'black';
+	document.getElementById('stop').style.color = 'blue';
 }
